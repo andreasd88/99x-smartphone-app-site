@@ -5,61 +5,49 @@
 // Primary:     #E8500E, #003962, #23B2A4
 // Secondary:   #F6A637, #E94B5A, #B3DFF1
 // Neutral:     #53565A, #A7A8AA, #D9D9D6
-
 // Bootstrap overrides
 //
 // Copy variables from `_variables.scss` to this file to override default values
 // without modifying source files.
-
 // General
-
-html, body {
+html,
+body {
     width: 100%;
     height: 100%;
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
 }
 
-h1, h2, h3, h4, h5 ,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 700;
 }
 
-b, strong {
+b,
+strong {
     font-weight: 500;
 }
 
-.brand-logo {
-    width: 180px;
-}
-
-
-.hero {
+.jumbo {
     height: 100vh;
     min-height: 500px;
     padding: 100px 0;
 }
 
-.hero .brand {
+.jumbo .brand {
     margin-top: 100px;
 }
 
 @media (max-width: 768px) {
-    .hero .brand {
-        margin-top: 0px; 
+    .jumbo .brand {
+        margin-top: 0px;
     }
 }
 
-.store-img {
-    width: 170px;
-}
-
-.hero h1 {
-    font-weight: 100;
-} 
-
-.hero h1 b {
-    font-weight: 700;
-}
 
 a {
     color: #d81b60;
@@ -68,7 +56,8 @@ a {
     transition: all .35s;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
     color: #F6A637 !important;
     outline: 0;
     text-decoration: none !important;
@@ -99,10 +88,6 @@ section {
     color: #999;
 }
 
-.card-outline-primary {
-    border: solid 1px #d81b60;
-}
-
 .small-xl {
     font-size: 90%;
 }
@@ -112,7 +97,7 @@ section {
 }
 
 .badge {
-    color: #fff; 
+    color: #fff;
 }
 
 
@@ -129,11 +114,16 @@ section {
     font-weight: 700;
 }
 
-.navbar-inverse .navbar-nav .nav-link, .navbar .navbar-brand, .navbar-toggler span {
+.navbar-inverse .navbar-nav .nav-link,
+.navbar .navbar-brand,
+.navbar-toggler span {
     color: black;
 }
 
-.navbar .nav-item .active, .navbar .nav-link:hover,.navbar .nav-link:focus, .navbar .navbar-brand:hover {
+.navbar .nav-item .active,
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar .navbar-brand:hover {
     color: black !important;
 }
 
@@ -152,9 +142,9 @@ section {
 }
 
 .bg-texture-collage {
-    background:linear-gradient(-45deg, #ffb300 33%, transparent 0%),
-        linear-gradient(-45deg, #F6A637 67%, transparent 33%),
-        linear-gradient(-45deg, #ffb300 100%, transparent 67%);
+    background: linear-gradient(-45deg, #ffb300 33%, transparent 0%),
+    linear-gradient(-45deg, #F6A637 67%, transparent 33%),
+    linear-gradient(-45deg, #ffb300 100%, transparent 67%);
 }
 
 .bg-alt {
@@ -227,7 +217,8 @@ section {
     padding: .6rem 1.5rem;
 }
 
-.btn:hover, .btn:focus {
+.btn:hover,
+.btn:focus {
     box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.15);
 }
 
@@ -246,7 +237,8 @@ section {
     border-color: #F6A637 !important;
 }
 
-.btn-primary:hover, .btn-primary:focus {
+.btn-primary:hover,
+.btn-primary:focus {
     color: #fff !important;
 }
 
@@ -254,117 +246,29 @@ section {
     border-radius: 50px;
 }
 
-
-// Borders
-.border-none{
-    border: none !important;
-    border-color: transparent !important;
-}
-.border-all{
-    border: 1px solid #DEE5E5 !important;
-}
-.border-left{
-    border-left: 1px solid #DEE5E5 !important;
-}
-.border-right{
-    border-right: 1px solid #DEE5E5 !important;
-}
-.border-top{
-    border-top: 1px solid #DEE5E5 !important;
-}
-.border-bottom{
-    border-bottom: 1px solid #DEE5E5 !important;
-}
-
-
-// Cards
-.card{
-    border: none;
-    margin-bottom: 30px;
-}
-
-.card .card-body .icon-box{
-    padding: 20px 0;
-    color: #F6A637;
-}
-
-.card .card-body h6{
-    padding-bottom: 15px;
-    font-size: 1.2rem;
-    font-weight: 500;
-}
-
-.card:hover {
-    box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.15);
-}
-
-
-// Tables and lists
-.pricing-list {
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-
-.pricing-list li {
-    font-size: 16px;
-    font-weight: normal;
-    margin-bottom: 15px;
-}
-
-.list-default{
-    list-style: none;
-    padding-left: 25px;
-}
-
-.list-default>li {
-    position: relative;
-    padding: 6px 0;
-    line-height: 1.55em;
-    font-size: 0.94rem;
-}
-
-.list-default>li:before {
-    content: "\f21b";
-    position: absolute;
-    left: -25px;
-    top: 8px;
-    font-size: 10px;
-    color: #F6A637;
-    font-family: "Ionicons";
-}
-
 ::selection {
     color: #fff;
     text-shadow: none;
     background: #F6A637;
 }
-.bg-texture{
+
+.bg-texture {
     background: black;
 }
-.sticky-navigation{
+
+.sticky-navigation {
     background-color: white!important;
 }
-.text-black{
+
+.text-black {
     color: black;
 }
+
 .navbar-dark .navbar-nav .nav-link {
     color: black;
 }
-.list-group-item a{
+
+.list-group-item a {
     color: black;
-    
-}
-.list-group-item a:hover{
-    color: black;
-    
-}
-.list-group-item{
-    background-color: #D9D9D6;
-}
-.star-light{
-    border-top-color: white;
-    
-}
-.star-light-b{
-    border-top-color: black;
+
 }
